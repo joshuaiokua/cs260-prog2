@@ -1,2 +1,12 @@
-# PROG-02-2020Starter
-PROG 2: Represent!
+# PROG 02: Represent!
+
+Brief description here
+
+## Author
+
+FirstName LastName (email@berkeley.edu)
+
+## Video Link
+
+youtube.com/yourLinkAddress
+
