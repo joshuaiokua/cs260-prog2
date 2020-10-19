@@ -9,5 +9,5 @@ Joshua Iokua Albano (jalabno@berkeley.edu)
 
 ## Video Link
 
-youtube.com/yourLinkAddress
+https://youtu.be/SEDF79qooys
 
