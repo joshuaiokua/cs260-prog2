@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_libstat"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65625" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1875" />
+
+    <LinearLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bannerGet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-7.5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="@string/get"
+                android:textColor="@color/colorPrimaryBlue"
+                android:textSize="72sp" />
+
+            <TextView
+                android:id="@+id/bannerRep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-7.5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="@string/rep"
+                android:textColor="@color/colorPrimaryRed"
+                android:textSize="72sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bannerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_condensed_light"
+            android:text="@string/banner_message"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/address_input_background"
+        android:drawableStart="@drawable/blue_circle_input_empty"
+        android:drawablePadding="-60dp"
+        android:ems="10"
+        android:hint="@string/address_hint"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_bold"
+        android:inputType="textPostalAddress"
+        android:singleLine="true"
+        android:maxWidth="50dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorHintText"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <EditText
+        android:id="@+id/editTextZipCode"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/address_input_background"
+        android:drawableStart="@drawable/blue_circle_input_empty"
+        android:drawablePadding="-60dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:maxLength="5"
+        android:hint="@string/zipcode_hint"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorHintText"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_bold"
+        android:imeOptions="actionGo"
+        android:imeActionId="777"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="or"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <RelativeLayout
+        android:id="@+id/currentLocationContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+        <ImageButton
+            android:id="@+id/buttonCurrentLocation"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blue_circle_button"
+            app:srcCompat="@drawable/ic_add_location_24px" />
+
+        <TextView
+            android:id="@+id/textViewCurrentLocation"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonCurrentLocation"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:gravity="center"
+            android:text="@string/current_location"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/randomLocationContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+        <ImageButton
+            android:id="@+id/buttonRandomLocation"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blue_circle_button"
+            app:srcCompat="@drawable/ic_not_listed_location_24px" />
+
+        <TextView
+            android:id="@+id/textViewRandomLocation"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonRandomLocation"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:gravity="center"
+            android:text="@string/random_location"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

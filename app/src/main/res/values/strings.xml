@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Prog02</string>
+
+
+    <string name="get">Get</string>
+    <string name="rep">Rep</string>
+    <string name="banner_message">Find Your Local Representative</string>
+
+    <string name="address_hint">Address, City, State</string>
+    <string name="zipcode_hint">Zip Code</string>
+    <string name="current_location">Current Location</string>
+    <string name="random_location">Random Location</string>
+
+    <string name="senator_section_header">U.S. Senators</string>
+    <string name="house_section_header">U.S. Representative</string>
+
+    <string name="rep_website">Website</string>
+    <string name="rep_phone">Phone</string>
+    <string name="rep_twitter">Twitter</string>
+    <string name="rep_facebook">Facebook</string>
+    <string name="rep_calling">Calling</string>
+</resources>

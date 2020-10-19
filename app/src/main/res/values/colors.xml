@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorText">#595959</color>
+    <color name="colorTextHalfOpacity">#80595959</color>
+    <color name="colorPrimaryBlue">#1788EF</color>
+    <color name="colorPrimaryRed">#D90609</color>
+    <color name="colorPrimaryPurple">#84508A</color>
+    <color name="colorIcon">#F2F2F2</color>
+    <color name="colorInputFieldBackground">#80FFFFFF</color>
+    <color name="colorHintText">#BBBBBB</color>
+
+</resources>

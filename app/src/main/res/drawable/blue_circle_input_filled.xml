@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/blue_circle_button"
+          android:height="60dp" android:width="60dp"/>
+    <item android:drawable="@drawable/ic_done_outline_24px"
+          android:top="7.5dp"
+          android:bottom="7.5dp"
+          android:end="7.5dp"
+          android:start="7.5dp"/>
+</layer-list>
