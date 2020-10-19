@@ -2,6 +2,7 @@ package com.example.prog02;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.TooltipCompat;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.prog02.R.drawable;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -38,9 +40,9 @@ public class RepPageActivity extends AppCompatActivity {
 
         //Pre-Defined Values
         int colorRed = getColor(R.color.colorPrimaryRed);
-        Drawable redButton = getDrawable(R.drawable.red_circle_button);
+        Drawable redButton = ContextCompat.getDrawable(this, R.drawable.red_circle_button);
         int colorBlue = getColor(R.color.colorPrimaryBlue);
-        Drawable blueButton = getDrawable(R.drawable.blue_circle_button);
+        Drawable blueButton = ContextCompat.getDrawable(this, R.drawable.blue_circle_button);
 
         // Get Intent Values
         officialInfoArray = new ArrayList<>(Objects.requireNonNull(getIntent().getStringArrayListExtra("officialArrayList")));
@@ -61,7 +63,7 @@ public class RepPageActivity extends AppCompatActivity {
         if (officialInfoArray.get(8).length() > 0){
             Picasso.with(this)
                     .load(officialInfoArray.get(8))
-                    .resize(260, 260)
+                    .resize(250, 250)
                     .transform(new CropCircleTransformation())
                     .into(officialPhoto);
         }

@@ -1,6 +1,7 @@
 package com.example.prog02;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -94,9 +95,9 @@ public class LocationOutputActivity extends AppCompatActivity {
             }
 
             if (senatorOne.get(3).equals("Republican Party")) {
-                senatorOneButton.setBackground(getDrawable(R.drawable.red_circle_button));
+                senatorOneButton.setBackground(ContextCompat.getDrawable(this, R.drawable.red_circle_button));
             } if (senatorOne.get(3).equals("Democratic Party")) {
-                senatorOneButton.setBackground(getDrawable(R.drawable.blue_circle_button));
+                senatorOneButton.setBackground(ContextCompat.getDrawable(this, R.drawable.blue_circle_button));
             }
 
             //// Senator Two ////
@@ -112,9 +113,9 @@ public class LocationOutputActivity extends AppCompatActivity {
             }
 
             if (senatorTwo.get(3).equals("Republican Party")) {
-                senatorTwoButton.setBackground(getDrawable(R.drawable.red_circle_button));
+                senatorTwoButton.setBackground(ContextCompat.getDrawable(this, R.drawable.red_circle_button));
             } if (senatorTwo.get(3).equals("Democratic Party")) {
-                senatorTwoButton.setBackground(getDrawable(R.drawable.blue_circle_button));
+                senatorTwoButton.setBackground(ContextCompat.getDrawable(this, R.drawable.blue_circle_button));
             }
 
             //// Congress Rep. ////
@@ -130,9 +131,9 @@ public class LocationOutputActivity extends AppCompatActivity {
             }
 
             if (congressRep.get(3).equals("Republican Party")) {
-                congressRepButton.setBackground(getDrawable(R.drawable.red_circle_button));
+                congressRepButton.setBackground(ContextCompat.getDrawable(this, R.drawable.red_circle_button));
             } if (congressRep.get(3).equals("Democratic Party")) {
-                congressRepButton.setBackground(getDrawable(R.drawable.blue_circle_button));
+                congressRepButton.setBackground(ContextCompat.getDrawable(this, R.drawable.blue_circle_button));
             }
 
 
@@ -170,8 +171,8 @@ public class LocationOutputActivity extends AppCompatActivity {
     }
 
     // Function to Get Official Specific Information from JSON Returned By API
-    private ArrayList<> getOfficialInfoFromArray(String stringPosition, JSONObject jsonObject){
-        ArrayList<String> officialInfoArrayList = new ArrayList<String>();
+    private ArrayList<String> getOfficialInfoFromArray(String stringPosition, JSONObject jsonObject){
+        ArrayList<String> officialInfoArrayList = new ArrayList<>();
         for (int i = 0; i < 11; i++) {
             officialInfoArrayList.add(null);
         }

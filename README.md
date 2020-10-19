@@ -1,10 +1,11 @@
 # PROG 02: Represent!
 
-Brief description here
+This application provides users the ability to look up their legistlative representatives either by
+current location, address input, zip code input, or random mainland U.S. Location.
 
 ## Author
 
-FirstName LastName (email@berkeley.edu)
+Joshua Iokua Albano (jalabno@berkeley.edu)
 
 ## Video Link
 

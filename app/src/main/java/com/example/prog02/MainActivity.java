@@ -112,17 +112,21 @@ public class MainActivity extends AppCompatActivity {
         editTextAddress.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                if (charSequence.length() < 7){
+                    editTextAddress.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_empty,0,0,0);
+                }
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                if (charSequence.length() >= 7){
+                    editTextAddress.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_filled,0,0,0);
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-                editTextAddress.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_filled,0,0,0);
+
             }
         });
         editTextAddress.setOnTouchListener(new View.OnTouchListener() {
@@ -144,17 +148,21 @@ public class MainActivity extends AppCompatActivity {
         editTextZipCode.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                if (charSequence.length() < 5){
+                    editTextZipCode.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_empty,0,0,0);
+                }
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                if (charSequence.length() >= 5){
+                    editTextZipCode.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_filled,0,0,0);
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-                editTextZipCode.setCompoundDrawablesWithIntrinsicBounds(R.drawable.blue_circle_input_filled,0,0,0);
+
             }
         });
         editTextZipCode.setOnTouchListener(new View.OnTouchListener() {
